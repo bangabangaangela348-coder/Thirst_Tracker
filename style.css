@@ -9,7 +9,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    min-height: 50vh;
+    min-height: 100vh;
     margin: 10;
     display: flex;
     justify-content: center;
