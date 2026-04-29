@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Silent Thirst Tracker</title>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-dark d-flex justify-content-center align-items-center vh-100">
+
+<div class="card shadow p-4 text-center" style="width: 1000px;">
+
+    <h2 class="mb-3">THIRST TRACKER</h2>
+
+    <!-- Goal -->
+    <div class="input-group mb-3">
+        <input type="number" id="goalInput" class="form-control" placeholder="Enter goal (ml)">
+        <button class="btn btn-primary" onclick="setGoal()">Set</button>
+    </div>
+
+    <p id="goalDisplay">Goal: 0 ml</p>
+    <p id="intakeDisplay">Drank: 0 ml</p>
+    <p id="remainingDisplay">Remaining: 0 ml</p>
+
+    <!-- Progress -->
+    <div class="progress mb-3">
+        <div id="progressBar" class="progress-bar bg-success" style="width: 0%"></div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="d-flex justify-content-between mb-2">
+        <button class="btn btn-info w-50 me-1" onclick="addWater(250)">+250 ml</button>
+        <button class="btn btn-info w-50 ms-1" onclick="addWater(500)">+500 ml</button>
+    </div>
+
+    <!-- Reset -->
+    <button class="btn btn-success w-100" onclick="resetAll()">Reset</button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
