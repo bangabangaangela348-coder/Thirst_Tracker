@@ -1,45 +1,56 @@
 body {
     font-family: Arial, sans-serif;
-    background: #e029c1;
+    background: linear-gradient(135deg, #d43daf);
+}
+
+/* Main card */
+body {
+    background-image: url("https://wallpapers.com/images/hd/water-aesthetic-v8maa5jrij4dn65f.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 50vh;
+    margin: 10;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
-.container {
-    background: rgb(237, 243, 153);
-    padding: 10px;
-    border-radius: 10px;
-    text-align: center;
-    width: 300px;
-}
-
-button {
-    padding: 10px;
-    margin: 5px;
-    border: none;
-    border-radius: 10px;
-    background: #f719f7;
-    color: rgb(29, 27, 27);
-    cursor: pointer;
-}
-
-button:hover {
-    background: #d21922;
-}
-
-.progress-container {
+.tracker-card {
+    background: rgba(89, 156, 22, 0.95); /* slight transparency looks better */
     width: 100%;
+    max-width: 800px;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Progress bar customization */
+.progress {
     height: 20px;
-    background: #f8e90f;
     border-radius: 10px;
-    margin: 15px 0;
+    overflow: hidden;
 }
 
 #progressBar {
-    height: 100%;
+    background: linear-gradient(90deg, #df2497, #7011ec);
     width: 0%;
-    background: #22ebda;
-    border-radius: 10px;
+    transition: width 0.4s ease;
+}
+
+/* Make buttons nicer */
+.btn-info {
+    color: rgb(0, 0, 0);
+}
+
+/* Mobile tweaks */
+@media (max-width: 480px) {
+    .tracker-card {
+        padding: 18px;
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
 }
