@@ -33,9 +33,9 @@ body {
 }
 
 #progressBar {
-    background: linear-gradient(#ec4fb8, #e761b4, #bd12b4);
+    background: linear-gradient(#ec4fb8);
     width: 0%;
-    transition: width 0.4s ease;
+    transition: width 0.5s ease;
 }
 
 
