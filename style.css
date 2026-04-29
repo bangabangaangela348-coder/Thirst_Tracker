@@ -17,9 +17,9 @@ body {
 }
 
 .tracker-card {
-    background: rgba(89, 156, 22, 0.95); /* slight transparency looks better */
+    background: rgba(193, 223, 26, 0.95); 
     width: 100%;
-    max-width: 800px;
+    max-width: 1000px;
     padding: 25px;
     border-radius: 16px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.2);
