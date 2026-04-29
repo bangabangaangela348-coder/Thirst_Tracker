@@ -38,8 +38,5 @@ body {
     transition: width 0.4s ease;
 }
 
-/* Make buttons nicer */
-.btn-info {
-    color: rgb(0, 0, 0);
-}
+
 
